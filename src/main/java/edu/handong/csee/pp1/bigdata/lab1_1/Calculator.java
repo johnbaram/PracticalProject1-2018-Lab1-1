@@ -69,6 +69,7 @@ public class Calculator {
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		printd("DV:" , divide(firstIntArg,secondIntArg));
+		print("**:" , power(firstIntArg, secondIntArg));
 		System.out.println("countForAnyCompution = " + countForAnyCompution);
 		System.out.println("localCount = " + localCount);
 	}
@@ -117,7 +118,15 @@ public class Calculator {
 		localCount++;
 		return first % second;
 	}
-
+	int power(int first, int second) {
+		countForAnyCompution++;
+		localCount++;
+		int result=first;
+		for(int i=1; i<second; i++)
+			result=result*first;
+		return result;
+	}
+	
 	static int getCount() {
 		return countForAnyCompution;
 	}
