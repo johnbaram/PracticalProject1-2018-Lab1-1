@@ -107,7 +107,7 @@ public class Calculator {
 		countForAnyCompution++;
 		localCount++;
 		if(second!=0) return first / second;
-		else return 0;
+		else return Double.NaN;
 	}
 
 	int mod(int first, int second) {
