@@ -102,7 +102,8 @@ public class Calculator {
 	int divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
-		return first / second;
+		if(second!=0) return first / second;
+		else return -999;
 	}
 
 	int mod(int first, int second) {
