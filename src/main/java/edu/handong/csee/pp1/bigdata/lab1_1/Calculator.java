@@ -69,6 +69,8 @@ public class Calculator {
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		printd("DV:" , divide(firstIntArg,secondIntArg));
+		System.out.println("countForAnyCompution = " + countForAnyCompution);
+		System.out.println("localCount = " + localCount);
 	}
 
 	
